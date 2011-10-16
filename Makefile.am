@@ -24,7 +24,7 @@ include $(top_srcdir)/aminclude.am
 
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = doxygen.cfg patches/getjiffies.patch
+EXTRA_DIST = doxygen.cfg patches/getjiffies-2.6.29.patch patches/getjiffies-3.0.3.patch
 
 SUBDIRS = src tests
 

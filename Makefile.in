@@ -82,12 +82,12 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-DIST_COMMON = $(am__configure_deps) $(srcdir)/Makefile.am \
+DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
-	$(top_srcdir)/aminclude.am $(top_srcdir)/configure COPYING \
-	build-aux//config.guess build-aux//config.sub \
-	build-aux//depcomp build-aux//install-sh build-aux//ltmain.sh \
-	build-aux//missing
+	$(top_srcdir)/aminclude.am $(top_srcdir)/configure AUTHORS \
+	COPYING ChangeLog build-aux//config.guess \
+	build-aux//config.sub build-aux//depcomp build-aux//install-sh \
+	build-aux//ltmain.sh build-aux//missing
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
@@ -289,7 +289,7 @@ top_srcdir = @top_srcdir@
 
 # Doxygen support
 ACLOCAL_AMFLAGS = -I m4
-EXTRA_DIST = doxygen.cfg patches/getjiffies.patch
+EXTRA_DIST = doxygen.cfg patches/getjiffies-2.6.29.patch patches/getjiffies-3.0.3.patch
 SUBDIRS = src tests
 all: config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-recursive

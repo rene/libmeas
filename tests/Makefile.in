@@ -53,10 +53,8 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = @build@
 host_triplet = @host@
-TESTS = sorts$(EXEEXT) loops$(EXEEXT) resources$(EXEEXT) \
-	dreader$(EXEEXT)
-bin_PROGRAMS = sorts$(EXEEXT) loops$(EXEEXT) resources$(EXEEXT) \
-	dreader$(EXEEXT)
+TESTS = sorts$(EXEEXT) loops$(EXEEXT) resources$(EXEEXT)
+bin_PROGRAMS = sorts$(EXEEXT) loops$(EXEEXT) resources$(EXEEXT)
 subdir = tests
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -72,9 +70,6 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_dreader_OBJECTS = dreader.$(OBJEXT)
-dreader_OBJECTS = $(am_dreader_OBJECTS)
-dreader_DEPENDENCIES = $(top_srcdir)/src/.libs/libmeas.a
 am_loops_OBJECTS = loops.$(OBJEXT)
 loops_OBJECTS = $(am_loops_OBJECTS)
 loops_DEPENDENCIES = $(top_srcdir)/src/.libs/libmeas.a
@@ -96,10 +91,8 @@ CCLD = $(CC)
 LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
-SOURCES = $(dreader_SOURCES) $(loops_SOURCES) $(resources_SOURCES) \
-	$(sorts_SOURCES)
-DIST_SOURCES = $(dreader_SOURCES) $(loops_SOURCES) \
-	$(resources_SOURCES) $(sorts_SOURCES)
+SOURCES = $(loops_SOURCES) $(resources_SOURCES) $(sorts_SOURCES)
+DIST_SOURCES = $(loops_SOURCES) $(resources_SOURCES) $(sorts_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -247,8 +240,6 @@ loops_SOURCES = loops.c
 loops_LDADD = $(top_srcdir)/src/.libs/libmeas.a
 resources_SOURCES = resources.c
 resources_LDADD = $(top_srcdir)/src/.libs/libmeas.a
-dreader_SOURCES = dreader.c
-dreader_LDADD = $(top_srcdir)/src/.libs/libmeas.a
 all: all-am
 
 .SUFFIXES:
@@ -310,9 +301,6 @@ clean-binPROGRAMS:
 	  echo " rm -f $$p $$f"; \
 	  rm -f $$p $$f ; \
 	done
-dreader$(EXEEXT): $(dreader_OBJECTS) $(dreader_DEPENDENCIES) 
-	@rm -f dreader$(EXEEXT)
-	$(LINK) $(dreader_OBJECTS) $(dreader_LDADD) $(LIBS)
 loops$(EXEEXT): $(loops_OBJECTS) $(loops_DEPENDENCIES) 
 	@rm -f loops$(EXEEXT)
 	$(LINK) $(loops_OBJECTS) $(loops_LDADD) $(LIBS)
@@ -329,7 +317,6 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dreader.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/loops.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/resources.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/sorts.Po@am__quote@
