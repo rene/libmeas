@@ -1,0 +1,106 @@
+\hypertarget{counter_8c}{
+\section{src/counter.c File Reference}
+\label{counter_8c}\index{src/counter.c@{src/counter.c}}
+}
+{\tt \#include $<$meas.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$unistd.h$>$}\par
+{\tt \#include $<$sys/syscall.h$>$}\par
+{\tt \#include $<$errno.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+meas\_\-counter $\ast$ \hyperlink{counter_8c_8ead64ee30d52d1b30cc5b80c4ce071b}{meas\_\-create\_\-counter} (meas\_\-t $\ast$$\ast$mst, unsigned long ivalue, char $\ast$name)
+\begin{CompactList}\small\item\em Create a counter. \item\end{CompactList}\item 
+unsigned long \hyperlink{counter_8c_b6fb989cc5dae9399d2c472b5643fc25}{meas\_\-set\_\-counter} (meas\_\-counter $\ast$counter, unsigned long value)
+\begin{CompactList}\small\item\em Set the value of a counter. \item\end{CompactList}\item 
+unsigned long \hyperlink{counter_8c_24dd3738dfc5a65642c583f0bb3e65e8}{meas\_\-get\_\-counter} (meas\_\-counter counter)
+\begin{CompactList}\small\item\em Return the value of a counter. \item\end{CompactList}\item 
+unsigned long \hyperlink{counter_8c_b84b7459a608a307dd5b408610c902f4}{meas\_\-inc\_\-counter} (meas\_\-counter $\ast$counter)
+\begin{CompactList}\small\item\em Increment the value of a counter. \item\end{CompactList}\item 
+unsigned long \hyperlink{counter_8c_2a1765187a2d1ef05850922c341d6bc9}{meas\_\-dec\_\-counter} (meas\_\-counter $\ast$counter)
+\begin{CompactList}\small\item\em Increment the value of a counter. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{counter_8c_8ead64ee30d52d1b30cc5b80c4ce071b}{
+\index{counter.c@{counter.c}!meas\_\-create\_\-counter@{meas\_\-create\_\-counter}}
+\index{meas\_\-create\_\-counter@{meas\_\-create\_\-counter}!counter.c@{counter.c}}
+\subsubsection[{meas\_\-create\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}meas\_\-counter$\ast$ meas\_\-create\_\-counter (meas\_\-t $\ast$$\ast$ {\em mst}, \/  unsigned long {\em ivalue}, \/  char $\ast$ {\em name})}}
+\label{counter_8c_8ead64ee30d52d1b30cc5b80c4ce071b}
+
+
+Create a counter. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em ivalue}]Initial value. \item[{\em name}]A name to the counter (useful for report visualization). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]NULL on error or the created counter. \end{Desc}
+\hypertarget{counter_8c_2a1765187a2d1ef05850922c341d6bc9}{
+\index{counter.c@{counter.c}!meas\_\-dec\_\-counter@{meas\_\-dec\_\-counter}}
+\index{meas\_\-dec\_\-counter@{meas\_\-dec\_\-counter}!counter.c@{counter.c}}
+\subsubsection[{meas\_\-dec\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long meas\_\-dec\_\-counter (meas\_\-counter $\ast$ {\em counter})}}
+\label{counter_8c_2a1765187a2d1ef05850922c341d6bc9}
+
+
+Increment the value of a counter. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em counter}]The counter \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]unsigned long New value of the counter \end{Desc}
+\hypertarget{counter_8c_24dd3738dfc5a65642c583f0bb3e65e8}{
+\index{counter.c@{counter.c}!meas\_\-get\_\-counter@{meas\_\-get\_\-counter}}
+\index{meas\_\-get\_\-counter@{meas\_\-get\_\-counter}!counter.c@{counter.c}}
+\subsubsection[{meas\_\-get\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long meas\_\-get\_\-counter (meas\_\-counter {\em counter})}}
+\label{counter_8c_24dd3738dfc5a65642c583f0bb3e65e8}
+
+
+Return the value of a counter. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em counter}]The counter \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]unsigned long Value of the counter \end{Desc}
+\hypertarget{counter_8c_b84b7459a608a307dd5b408610c902f4}{
+\index{counter.c@{counter.c}!meas\_\-inc\_\-counter@{meas\_\-inc\_\-counter}}
+\index{meas\_\-inc\_\-counter@{meas\_\-inc\_\-counter}!counter.c@{counter.c}}
+\subsubsection[{meas\_\-inc\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long meas\_\-inc\_\-counter (meas\_\-counter $\ast$ {\em counter})}}
+\label{counter_8c_b84b7459a608a307dd5b408610c902f4}
+
+
+Increment the value of a counter. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em counter}]The counter \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]unsigned long New value of the counter \end{Desc}
+\hypertarget{counter_8c_b6fb989cc5dae9399d2c472b5643fc25}{
+\index{counter.c@{counter.c}!meas\_\-set\_\-counter@{meas\_\-set\_\-counter}}
+\index{meas\_\-set\_\-counter@{meas\_\-set\_\-counter}!counter.c@{counter.c}}
+\subsubsection[{meas\_\-set\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long meas\_\-set\_\-counter (meas\_\-counter $\ast$ {\em counter}, \/  unsigned long {\em value})}}
+\label{counter_8c_b6fb989cc5dae9399d2c472b5643fc25}
+
+
+Set the value of a counter. 
+
+Use ONLY for change initial value. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em counter}]The counter \item[{\em value}]Value of the counter \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]unsigned long New value of the counter \end{Desc}

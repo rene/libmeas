@@ -1,0 +1,75 @@
+\indexentry{src/ Directory Reference@{src/ Directory Reference}|hyperpage}{5}
+\indexentry{src/counter.c@{src/counter.c}|hyperpage}{7}
+\indexentry{counter.c@{counter.c}!meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter}|hyperpage}{7}
+\indexentry{meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter}!counter.c@{counter.c}|hyperpage}{7}
+\indexentry{counter.c@{counter.c}!meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter}|hyperpage}{8}
+\indexentry{meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter}!counter.c@{counter.c}|hyperpage}{8}
+\indexentry{counter.c@{counter.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter}|hyperpage}{8}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter}!counter.c@{counter.c}|hyperpage}{8}
+\indexentry{counter.c@{counter.c}!meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter}|hyperpage}{8}
+\indexentry{meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter}!counter.c@{counter.c}|hyperpage}{8}
+\indexentry{counter.c@{counter.c}!meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter}|hyperpage}{8}
+\indexentry{meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter@{meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter}!counter.c@{counter.c}|hyperpage}{8}
+\indexentry{src/init.c@{src/init.c}|hyperpage}{10}
+\indexentry{init.c@{init.c}!\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}@{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}|hyperpage}{10}
+\indexentry{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}@{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}!init.c@{init.c}|hyperpage}{10}
+\indexentry{init.c@{init.c}!\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}@{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}|hyperpage}{10}
+\indexentry{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}@{\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}!init.c@{init.c}|hyperpage}{10}
+\indexentry{init.c@{init.c}!meas\_\discretionary {-}{}{}close@{meas\_\discretionary {-}{}{}close}|hyperpage}{10}
+\indexentry{meas\_\discretionary {-}{}{}close@{meas\_\discretionary {-}{}{}close}!init.c@{init.c}|hyperpage}{10}
+\indexentry{init.c@{init.c}!meas\_\discretionary {-}{}{}init@{meas\_\discretionary {-}{}{}init}|hyperpage}{10}
+\indexentry{meas\_\discretionary {-}{}{}init@{meas\_\discretionary {-}{}{}init}!init.c@{init.c}|hyperpage}{10}
+\indexentry{src/linkedl.c@{src/linkedl.c}|hyperpage}{12}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}add@{llist\_\discretionary {-}{}{}add}|hyperpage}{12}
+\indexentry{llist\_\discretionary {-}{}{}add@{llist\_\discretionary {-}{}{}add}!linkedl.c@{linkedl.c}|hyperpage}{12}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}create@{llist\_\discretionary {-}{}{}create}|hyperpage}{12}
+\indexentry{llist\_\discretionary {-}{}{}create@{llist\_\discretionary {-}{}{}create}!linkedl.c@{linkedl.c}|hyperpage}{12}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}destroy@{llist\_\discretionary {-}{}{}destroy}|hyperpage}{13}
+\indexentry{llist\_\discretionary {-}{}{}destroy@{llist\_\discretionary {-}{}{}destroy}!linkedl.c@{linkedl.c}|hyperpage}{13}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}index@{llist\_\discretionary {-}{}{}index}|hyperpage}{13}
+\indexentry{llist\_\discretionary {-}{}{}index@{llist\_\discretionary {-}{}{}index}!linkedl.c@{linkedl.c}|hyperpage}{13}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}length@{llist\_\discretionary {-}{}{}length}|hyperpage}{13}
+\indexentry{llist\_\discretionary {-}{}{}length@{llist\_\discretionary {-}{}{}length}!linkedl.c@{linkedl.c}|hyperpage}{13}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}nth@{llist\_\discretionary {-}{}{}nth}|hyperpage}{13}
+\indexentry{llist\_\discretionary {-}{}{}nth@{llist\_\discretionary {-}{}{}nth}!linkedl.c@{linkedl.c}|hyperpage}{13}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}remove@{llist\_\discretionary {-}{}{}remove}|hyperpage}{14}
+\indexentry{llist\_\discretionary {-}{}{}remove@{llist\_\discretionary {-}{}{}remove}!linkedl.c@{linkedl.c}|hyperpage}{14}
+\indexentry{linkedl.c@{linkedl.c}!llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth@{llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth}|hyperpage}{14}
+\indexentry{llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth@{llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth}!linkedl.c@{linkedl.c}|hyperpage}{14}
+\indexentry{src/report.c@{src/report.c}|hyperpage}{15}
+\indexentry{report.c@{report.c}!TEXTBUFFER\_\discretionary {-}{}{}SIZE@{TEXTBUFFER\_\discretionary {-}{}{}SIZE}|hyperpage}{15}
+\indexentry{TEXTBUFFER\_\discretionary {-}{}{}SIZE@{TEXTBUFFER\_\discretionary {-}{}{}SIZE}!report.c@{report.c}|hyperpage}{15}
+\indexentry{report.c@{report.c}!meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report@{meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report}|hyperpage}{15}
+\indexentry{meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report@{meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report}!report.c@{report.c}|hyperpage}{15}
+\indexentry{report.c@{report.c}!meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report@{meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report}|hyperpage}{15}
+\indexentry{meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report@{meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report}!report.c@{report.c}|hyperpage}{15}
+\indexentry{src/resources.c@{src/resources.c}|hyperpage}{17}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput}|hyperpage}{17}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput}!resources.c@{resources.c}|hyperpage}{17}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput}|hyperpage}{18}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput}!resources.c@{resources.c}|hyperpage}{18}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches}|hyperpage}{18}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches}!resources.c@{resources.c}|hyperpage}{18}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec}|hyperpage}{18}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec}!resources.c@{resources.c}|hyperpage}{18}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals}|hyperpage}{18}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals}!resources.c@{resources.c}|hyperpage}{18}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap}|hyperpage}{19}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap}!resources.c@{resources.c}|hyperpage}{19}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault}|hyperpage}{19}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault}!resources.c@{resources.c}|hyperpage}{19}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem}|hyperpage}{19}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem}!resources.c@{resources.c}|hyperpage}{19}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack}|hyperpage}{19}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack}!resources.c@{resources.c}|hyperpage}{19}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime}|hyperpage}{20}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime}!resources.c@{resources.c}|hyperpage}{20}
+\indexentry{resources.c@{resources.c}!meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime}|hyperpage}{20}
+\indexentry{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime@{meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime}!resources.c@{resources.c}|hyperpage}{20}
+\indexentry{src/time.c@{src/time.c}|hyperpage}{21}
+\indexentry{time.c@{time.c}!SYS\_\discretionary {-}{}{}getjiffies@{SYS\_\discretionary {-}{}{}getjiffies}|hyperpage}{21}
+\indexentry{SYS\_\discretionary {-}{}{}getjiffies@{SYS\_\discretionary {-}{}{}getjiffies}!time.c@{time.c}|hyperpage}{21}
+\indexentry{time.c@{time.c}!meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock@{meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock}|hyperpage}{21}
+\indexentry{meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock@{meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock}!time.c@{time.c}|hyperpage}{21}
+\indexentry{time.c@{time.c}!meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock@{meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock}|hyperpage}{21}
+\indexentry{meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock@{meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock}!time.c@{time.c}|hyperpage}{21}

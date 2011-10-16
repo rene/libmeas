@@ -1,0 +1,55 @@
+\contentsline {chapter}{\numberline {1}Directory Hierarchy}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Directories}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Directory Documentation}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}src/ Directory Reference}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}src/counter.c File Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Function Documentation}{7}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter}{7}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter}{8}{subsubsection.4.1.1.2}
+\contentsline {subsubsection}{\numberline {4.1.1.3}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter}{8}{subsubsection.4.1.1.3}
+\contentsline {subsubsection}{\numberline {4.1.1.4}meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter}{8}{subsubsection.4.1.1.4}
+\contentsline {subsubsection}{\numberline {4.1.1.5}meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter}{8}{subsubsection.4.1.1.5}
+\contentsline {section}{\numberline {4.2}src/init.c File Reference}{10}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Function Documentation}{10}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{10}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}{10}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}meas\_\discretionary {-}{}{}close}{10}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.1.4}meas\_\discretionary {-}{}{}init}{10}{subsubsection.4.2.1.4}
+\contentsline {section}{\numberline {4.3}src/linkedl.c File Reference}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Function Documentation}{12}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}llist\_\discretionary {-}{}{}add}{12}{subsubsection.4.3.1.1}
+\contentsline {subsubsection}{\numberline {4.3.1.2}llist\_\discretionary {-}{}{}create}{13}{subsubsection.4.3.1.2}
+\contentsline {subsubsection}{\numberline {4.3.1.3}llist\_\discretionary {-}{}{}destroy}{13}{subsubsection.4.3.1.3}
+\contentsline {subsubsection}{\numberline {4.3.1.4}llist\_\discretionary {-}{}{}index}{13}{subsubsection.4.3.1.4}
+\contentsline {subsubsection}{\numberline {4.3.1.5}llist\_\discretionary {-}{}{}length}{13}{subsubsection.4.3.1.5}
+\contentsline {subsubsection}{\numberline {4.3.1.6}llist\_\discretionary {-}{}{}nth}{14}{subsubsection.4.3.1.6}
+\contentsline {subsubsection}{\numberline {4.3.1.7}llist\_\discretionary {-}{}{}remove}{14}{subsubsection.4.3.1.7}
+\contentsline {subsubsection}{\numberline {4.3.1.8}llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth}{14}{subsubsection.4.3.1.8}
+\contentsline {section}{\numberline {4.4}src/report.c File Reference}{15}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Define Documentation}{15}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}TEXTBUFFER\_\discretionary {-}{}{}SIZE}{15}{subsubsection.4.4.1.1}
+\contentsline {subsection}{\numberline {4.4.2}Function Documentation}{15}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report}{15}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report}{16}{subsubsection.4.4.2.2}
+\contentsline {section}{\numberline {4.5}src/resources.c File Reference}{17}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Function Documentation}{17}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput}{17}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput}{18}{subsubsection.4.5.1.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches}{18}{subsubsection.4.5.1.3}
+\contentsline {subsubsection}{\numberline {4.5.1.4}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec}{18}{subsubsection.4.5.1.4}
+\contentsline {subsubsection}{\numberline {4.5.1.5}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals}{19}{subsubsection.4.5.1.5}
+\contentsline {subsubsection}{\numberline {4.5.1.6}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap}{19}{subsubsection.4.5.1.6}
+\contentsline {subsubsection}{\numberline {4.5.1.7}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault}{19}{subsubsection.4.5.1.7}
+\contentsline {subsubsection}{\numberline {4.5.1.8}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem}{19}{subsubsection.4.5.1.8}
+\contentsline {subsubsection}{\numberline {4.5.1.9}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack}{20}{subsubsection.4.5.1.9}
+\contentsline {subsubsection}{\numberline {4.5.1.10}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime}{20}{subsubsection.4.5.1.10}
+\contentsline {subsubsection}{\numberline {4.5.1.11}meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime}{20}{subsubsection.4.5.1.11}
+\contentsline {section}{\numberline {4.6}src/time.c File Reference}{21}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Define Documentation}{21}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}SYS\_\discretionary {-}{}{}getjiffies}{21}{subsubsection.4.6.1.1}
+\contentsline {subsection}{\numberline {4.6.2}Function Documentation}{21}{subsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.2.1}meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock}{21}{subsubsection.4.6.2.1}
+\contentsline {subsubsection}{\numberline {4.6.2.2}meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock}{22}{subsubsection.4.6.2.2}

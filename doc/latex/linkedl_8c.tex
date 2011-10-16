@@ -1,0 +1,155 @@
+\hypertarget{linkedl_8c}{
+\section{src/linkedl.c File Reference}
+\label{linkedl_8c}\index{src/linkedl.c@{src/linkedl.c}}
+}
+{\tt \#include $<$linkedl.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{linkedl_8c_09018fc0c85cbc131614e3fcb52eac68}{llist\_\-create} (llist $\ast$$\ast$list)
+\begin{CompactList}\small\item\em Linked list functions For libmeas internal use. \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_58c5ce86c3c2d8aaa2546f870ce026a7}{llist\_\-destroy} (llist $\ast$$\ast$list)
+\begin{CompactList}\small\item\em Destroy a linked list (remove all items). \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_282e4f91d46ded4f2c151ed1ea96e88d}{llist\_\-add} (llist $\ast$$\ast$list, void $\ast$element)
+\begin{CompactList}\small\item\em Add item to the list. \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_077fb404d8f0439930889408f79accbb}{llist\_\-remove\_\-nth} (llist $\ast$$\ast$list, unsigned int pos)
+\begin{CompactList}\small\item\em Remove the nth item of the list. \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_642aa3bead34bec8023811dbe2726c50}{llist\_\-remove} (llist $\ast$$\ast$list, void $\ast$element)
+\begin{CompactList}\small\item\em Remove an item from the list. \item\end{CompactList}\item 
+void $\ast$ \hyperlink{linkedl_8c_637eebe4251a0e6e95f5bb0b237a7081}{llist\_\-nth} (llist $\ast$list, unsigned int index)
+\begin{CompactList}\small\item\em Return the nth element of the list. \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_53930bd4a3696355b85d7a791304cd61}{llist\_\-index} (llist $\ast$list, void $\ast$element)
+\begin{CompactList}\small\item\em Return the index of some element list. \item\end{CompactList}\item 
+int \hyperlink{linkedl_8c_f75fc35aa956af30a351083353a14447}{llist\_\-length} (llist $\ast$list)
+\begin{CompactList}\small\item\em Return the number of items inside the list. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{linkedl_8c_282e4f91d46ded4f2c151ed1ea96e88d}{
+\index{linkedl.c@{linkedl.c}!llist\_\-add@{llist\_\-add}}
+\index{llist\_\-add@{llist\_\-add}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-add (llist $\ast$$\ast$ {\em list}, \/  void $\ast$ {\em element})}}
+\label{linkedl_8c_282e4f91d46ded4f2c151ed1ea96e88d}
+
+
+Add item to the list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]Pointer to the list \item[{\em element}]Any element (void pointer) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error. TRUE otherwise \end{Desc}
+\hypertarget{linkedl_8c_09018fc0c85cbc131614e3fcb52eac68}{
+\index{linkedl.c@{linkedl.c}!llist\_\-create@{llist\_\-create}}
+\index{llist\_\-create@{llist\_\-create}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-create (llist $\ast$$\ast$ {\em list})}}
+\label{linkedl_8c_09018fc0c85cbc131614e3fcb52eac68}
+
+
+Linked list functions For libmeas internal use. 
+
+Create a empty linked list \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]Pointer to list \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error. TRUE otherwise \end{Desc}
+\hypertarget{linkedl_8c_58c5ce86c3c2d8aaa2546f870ce026a7}{
+\index{linkedl.c@{linkedl.c}!llist\_\-destroy@{llist\_\-destroy}}
+\index{llist\_\-destroy@{llist\_\-destroy}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-destroy (llist $\ast$$\ast$ {\em list})}}
+\label{linkedl_8c_58c5ce86c3c2d8aaa2546f870ce026a7}
+
+
+Destroy a linked list (remove all items). 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]Pointer to list \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error. TRUE otherwise \end{Desc}
+\hypertarget{linkedl_8c_53930bd4a3696355b85d7a791304cd61}{
+\index{linkedl.c@{linkedl.c}!llist\_\-index@{llist\_\-index}}
+\index{llist\_\-index@{llist\_\-index}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-index (llist $\ast$ {\em list}, \/  void $\ast$ {\em element})}}
+\label{linkedl_8c_53930bd4a3696355b85d7a791304cd61}
+
+
+Return the index of some element list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]List \item[{\em element}]Item \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Element index or -1 (if not found) \end{Desc}
+\hypertarget{linkedl_8c_f75fc35aa956af30a351083353a14447}{
+\index{linkedl.c@{linkedl.c}!llist\_\-length@{llist\_\-length}}
+\index{llist\_\-length@{llist\_\-length}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-length (llist $\ast$ {\em list})}}
+\label{linkedl_8c_f75fc35aa956af30a351083353a14447}
+
+
+Return the number of items inside the list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]List \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of items \end{Desc}
+\hypertarget{linkedl_8c_637eebe4251a0e6e95f5bb0b237a7081}{
+\index{linkedl.c@{linkedl.c}!llist\_\-nth@{llist\_\-nth}}
+\index{llist\_\-nth@{llist\_\-nth}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-nth}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ llist\_\-nth (llist $\ast$ {\em list}, \/  unsigned int {\em index})}}
+\label{linkedl_8c_637eebe4251a0e6e95f5bb0b237a7081}
+
+
+Return the nth element of the list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]List \item[{\em index}]Element position \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]void$\ast$ Pointer to the element or NULL if not found \end{Desc}
+\hypertarget{linkedl_8c_642aa3bead34bec8023811dbe2726c50}{
+\index{linkedl.c@{linkedl.c}!llist\_\-remove@{llist\_\-remove}}
+\index{llist\_\-remove@{llist\_\-remove}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-remove (llist $\ast$$\ast$ {\em list}, \/  void $\ast$ {\em element})}}
+\label{linkedl_8c_642aa3bead34bec8023811dbe2726c50}
+
+
+Remove an item from the list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]Pointer to the list \item[{\em element}]Pointer to the item to be removed \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error. TRUE otherwise \end{Desc}
+\hypertarget{linkedl_8c_077fb404d8f0439930889408f79accbb}{
+\index{linkedl.c@{linkedl.c}!llist\_\-remove\_\-nth@{llist\_\-remove\_\-nth}}
+\index{llist\_\-remove\_\-nth@{llist\_\-remove\_\-nth}!linkedl.c@{linkedl.c}}
+\subsubsection[{llist\_\-remove\_\-nth}]{\setlength{\rightskip}{0pt plus 5cm}int llist\_\-remove\_\-nth (llist $\ast$$\ast$ {\em list}, \/  unsigned int {\em pos})}}
+\label{linkedl_8c_077fb404d8f0439930889408f79accbb}
+
+
+Remove the nth item of the list. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em list}]Pointer to the list \item[{\em pos}]Item position at the list \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error. TRUE otherwise \end{Desc}

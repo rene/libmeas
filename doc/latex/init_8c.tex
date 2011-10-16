@@ -1,0 +1,72 @@
+\hypertarget{init_8c}{
+\section{src/init.c File Reference}
+\label{init_8c}\index{src/init.c@{src/init.c}}
+}
+{\tt \#include $<$meas.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{init_8c_083b2e840cc4afee2f08f66c46f4d64d}{\_\-\_\-attribute\_\-\_\-} ((constructor))
+\begin{CompactList}\small\item\em Global constructor for libmeas internal allocation. \item\end{CompactList}\item 
+\hyperlink{init_8c_521aaa29708382a7af39b3f0e60e4a1f}{\_\-\_\-attribute\_\-\_\-} ((destructor))
+\begin{CompactList}\small\item\em Global destructor for libmeas internal deallocation. \item\end{CompactList}\item 
+int \hyperlink{init_8c_875f107d68e161f008e8e2175abf70f5}{meas\_\-init} (meas\_\-t $\ast$$\ast$mst)
+\begin{CompactList}\small\item\em Initialize user structures for use libmeas API. \item\end{CompactList}\item 
+void \hyperlink{init_8c_5373975a7f97c607f4f8ec56dafa0fe8}{meas\_\-close} (meas\_\-t $\ast$$\ast$mst)
+\begin{CompactList}\small\item\em Destroy libmeas user structures. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{init_8c_521aaa29708382a7af39b3f0e60e4a1f}{
+\index{init.c@{init.c}!\_\-\_\-attribute\_\-\_\-@{\_\-\_\-attribute\_\-\_\-}}
+\index{\_\-\_\-attribute\_\-\_\-@{\_\-\_\-attribute\_\-\_\-}!init.c@{init.c}}
+\subsubsection[{\_\-\_\-attribute\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-attribute\_\-\_\- ((destructor))}}
+\label{init_8c_521aaa29708382a7af39b3f0e60e4a1f}
+
+
+Global destructor for libmeas internal deallocation. 
+
+\hypertarget{init_8c_083b2e840cc4afee2f08f66c46f4d64d}{
+\index{init.c@{init.c}!\_\-\_\-attribute\_\-\_\-@{\_\-\_\-attribute\_\-\_\-}}
+\index{\_\-\_\-attribute\_\-\_\-@{\_\-\_\-attribute\_\-\_\-}!init.c@{init.c}}
+\subsubsection[{\_\-\_\-attribute\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\_\-\_\-attribute\_\-\_\- ((constructor))}}
+\label{init_8c_083b2e840cc4afee2f08f66c46f4d64d}
+
+
+Global constructor for libmeas internal allocation. 
+
+\hypertarget{init_8c_5373975a7f97c607f4f8ec56dafa0fe8}{
+\index{init.c@{init.c}!meas\_\-close@{meas\_\-close}}
+\index{meas\_\-close@{meas\_\-close}!init.c@{init.c}}
+\subsubsection[{meas\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}void meas\_\-close (meas\_\-t $\ast$$\ast$ {\em mst})}}
+\label{init_8c_5373975a7f97c607f4f8ec56dafa0fe8}
+
+
+Destroy libmeas user structures. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The user libmeas structure \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{init_8c_875f107d68e161f008e8e2175abf70f5}{meas\_\-init} \end{Desc}
+\hypertarget{init_8c_875f107d68e161f008e8e2175abf70f5}{
+\index{init.c@{init.c}!meas\_\-init@{meas\_\-init}}
+\index{meas\_\-init@{meas\_\-init}!init.c@{init.c}}
+\subsubsection[{meas\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int meas\_\-init (meas\_\-t $\ast$$\ast$ {\em mst})}}
+\label{init_8c_875f107d68e161f008e8e2175abf70f5}
+
+
+Initialize user structures for use libmeas API. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The user libmeas structure \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int FALSE on error. True otherwhise \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{init_8c_5373975a7f97c607f4f8ec56dafa0fe8}{meas\_\-close} \end{Desc}

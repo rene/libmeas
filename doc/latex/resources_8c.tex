@@ -1,0 +1,209 @@
+\hypertarget{resources_8c}{
+\section{src/resources.c File Reference}
+\label{resources_8c}\index{src/resources.c@{src/resources.c}}
+}
+{\tt \#include $<$meas.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+struct timeval $\ast$ \hyperlink{resources_8c_f057a5f716713ff5ed69815f0e56a956}{meas\_\-get\_\-utime} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the user time used. \item\end{CompactList}\item 
+struct timeval $\ast$ \hyperlink{resources_8c_85a003db4d6452879558d2c245c313ab}{meas\_\-get\_\-stime} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the system time used. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_7e18417b1636eca59ffb697027f2a28c}{meas\_\-get\_\-shared\_\-mem} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the integral shared memory size. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_7a1a40e4d07eb9a05dabe0d003157753}{meas\_\-get\_\-datasec} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the integral (unshared) data section size. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_4c41723345db9cd9363ef16776b2d13e}{meas\_\-get\_\-stack} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the integral (unshared) stack size. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_b15fd2b786421a06668b0a299e9bc5bd}{meas\_\-get\_\-pagefault} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number of page faults. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_0e79dd10ede41a142b07e7af2c0de6ec}{meas\_\-get\_\-nswap} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number of pages swapped. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_de03949a398d7b5bd4f451957c39d033}{meas\_\-get\_\-nsignals} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number of signals received. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_9a905ec4d45d71d779c694eb8f7485af}{meas\_\-get\_\-blkinput} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number of block input operations. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_e296827d8c3d06a9a9e2232297f35ac2}{meas\_\-get\_\-blkoutput} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number of block output operations. \item\end{CompactList}\item 
+long \hyperlink{resources_8c_cab4dfd2a785d1e2ab14dbddb5795a89}{meas\_\-get\_\-cswitches} (meas\_\-t $\ast$$\ast$mst, int who)
+\begin{CompactList}\small\item\em Return the number context switches (voluntary + involuntary). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{resources_8c_9a905ec4d45d71d779c694eb8f7485af}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-blkinput@{meas\_\-get\_\-blkinput}}
+\index{meas\_\-get\_\-blkinput@{meas\_\-get\_\-blkinput}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-blkinput}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-blkinput (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_9a905ec4d45d71d779c694eb8f7485af}
+
+
+Return the number of block input operations. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of block input operations. \end{Desc}
+\hypertarget{resources_8c_e296827d8c3d06a9a9e2232297f35ac2}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-blkoutput@{meas\_\-get\_\-blkoutput}}
+\index{meas\_\-get\_\-blkoutput@{meas\_\-get\_\-blkoutput}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-blkoutput}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-blkoutput (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_e296827d8c3d06a9a9e2232297f35ac2}
+
+
+Return the number of block output operations. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of block output operations. \end{Desc}
+\hypertarget{resources_8c_cab4dfd2a785d1e2ab14dbddb5795a89}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-cswitches@{meas\_\-get\_\-cswitches}}
+\index{meas\_\-get\_\-cswitches@{meas\_\-get\_\-cswitches}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-cswitches}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-cswitches (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_cab4dfd2a785d1e2ab14dbddb5795a89}
+
+
+Return the number context switches (voluntary + involuntary). 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of total context switches. \end{Desc}
+\hypertarget{resources_8c_7a1a40e4d07eb9a05dabe0d003157753}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-datasec@{meas\_\-get\_\-datasec}}
+\index{meas\_\-get\_\-datasec@{meas\_\-get\_\-datasec}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-datasec}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-datasec (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_7a1a40e4d07eb9a05dabe0d003157753}
+
+
+Return the integral (unshared) data section size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or integral (unshared) data section size. \end{Desc}
+\hypertarget{resources_8c_de03949a398d7b5bd4f451957c39d033}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-nsignals@{meas\_\-get\_\-nsignals}}
+\index{meas\_\-get\_\-nsignals@{meas\_\-get\_\-nsignals}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-nsignals}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-nsignals (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_de03949a398d7b5bd4f451957c39d033}
+
+
+Return the number of signals received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of signals received. \end{Desc}
+\hypertarget{resources_8c_0e79dd10ede41a142b07e7af2c0de6ec}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-nswap@{meas\_\-get\_\-nswap}}
+\index{meas\_\-get\_\-nswap@{meas\_\-get\_\-nswap}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-nswap}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-nswap (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_0e79dd10ede41a142b07e7af2c0de6ec}
+
+
+Return the number of pages swapped. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of pages swapped. \end{Desc}
+\hypertarget{resources_8c_b15fd2b786421a06668b0a299e9bc5bd}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-pagefault@{meas\_\-get\_\-pagefault}}
+\index{meas\_\-get\_\-pagefault@{meas\_\-get\_\-pagefault}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-pagefault}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-pagefault (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_b15fd2b786421a06668b0a299e9bc5bd}
+
+
+Return the number of page faults. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or number of page faults. \end{Desc}
+\hypertarget{resources_8c_7e18417b1636eca59ffb697027f2a28c}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-shared\_\-mem@{meas\_\-get\_\-shared\_\-mem}}
+\index{meas\_\-get\_\-shared\_\-mem@{meas\_\-get\_\-shared\_\-mem}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-shared\_\-mem}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-shared\_\-mem (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_7e18417b1636eca59ffb697027f2a28c}
+
+
+Return the integral shared memory size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or integral shared memory size. \end{Desc}
+\hypertarget{resources_8c_4c41723345db9cd9363ef16776b2d13e}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-stack@{meas\_\-get\_\-stack}}
+\index{meas\_\-get\_\-stack@{meas\_\-get\_\-stack}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-stack}]{\setlength{\rightskip}{0pt plus 5cm}long meas\_\-get\_\-stack (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})}}
+\label{resources_8c_4c41723345db9cd9363ef16776b2d13e}
+
+
+Return the integral (unshared) stack size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long -1 on error or integral (unshared) stack size. \end{Desc}
+\hypertarget{resources_8c_85a003db4d6452879558d2c245c313ab}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-stime@{meas\_\-get\_\-stime}}
+\index{meas\_\-get\_\-stime@{meas\_\-get\_\-stime}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-stime}]{\setlength{\rightskip}{0pt plus 5cm}struct timeval$\ast$ meas\_\-get\_\-stime (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})\hspace{0.3cm}{\tt  \mbox{[}read\mbox{]}}}}
+\label{resources_8c_85a003db4d6452879558d2c245c313ab}
+
+
+Return the system time used. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]struct timeval NULL on error or amount of time that this process has been scheduled in kernel mode, measured in clock ticks (divide by sysconf(\_\-SC\_\-CLK\_\-TCK). \end{Desc}
+\hypertarget{resources_8c_f057a5f716713ff5ed69815f0e56a956}{
+\index{resources.c@{resources.c}!meas\_\-get\_\-utime@{meas\_\-get\_\-utime}}
+\index{meas\_\-get\_\-utime@{meas\_\-get\_\-utime}!resources.c@{resources.c}}
+\subsubsection[{meas\_\-get\_\-utime}]{\setlength{\rightskip}{0pt plus 5cm}struct timeval$\ast$ meas\_\-get\_\-utime (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em who})\hspace{0.3cm}{\tt  \mbox{[}read\mbox{]}}}}
+\label{resources_8c_f057a5f716713ff5ed69815f0e56a956}
+
+
+Return the user time used. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em who}]Can be: RUSAGE\_\-SELF (calling proccess), RUSAGE\_\-CHILDREN (all children) or RUSAGE\_\-THREAD (calling thread). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]struct timeval NULL on error or amount of time that this process has been scheduled in user mode, measured in clock ticks (divide by sysconf(\_\-SC\_\-CLK\_\-TCK). \end{Desc}

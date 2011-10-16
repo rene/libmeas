@@ -1,0 +1,69 @@
+\hypertarget{time_8c}{
+\section{src/time.c File Reference}
+\label{time_8c}\index{src/time.c@{src/time.c}}
+}
+{\tt \#include $<$meas.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$unistd.h$>$}\par
+{\tt \#include $<$sys/syscall.h$>$}\par
+{\tt \#include $<$errno.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{time_8c_545150dbe7d8129a2da31c6e9be383d6}{SYS\_\-getjiffies}~337
+\begin{CompactList}\small\item\em syscall getjiffies number \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+meas\_\-clock $\ast$ \hyperlink{time_8c_85184b34267ebcaae7e360b4802f8fc2}{meas\_\-start\_\-clock} (meas\_\-t $\ast$$\ast$mst, meas\_\-clock $\ast$clock, char $\ast$name)
+\begin{CompactList}\small\item\em Start or/and create a timer. \item\end{CompactList}\item 
+int \hyperlink{time_8c_ebf4b237ce0defb3c6b0e4ed1cacf2ca}{meas\_\-stop\_\-clock} (meas\_\-clock $\ast$clock)
+\begin{CompactList}\small\item\em Stop a timer. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{time_8c_545150dbe7d8129a2da31c6e9be383d6}{
+\index{time.c@{time.c}!SYS\_\-getjiffies@{SYS\_\-getjiffies}}
+\index{SYS\_\-getjiffies@{SYS\_\-getjiffies}!time.c@{time.c}}
+\subsubsection[{SYS\_\-getjiffies}]{\setlength{\rightskip}{0pt plus 5cm}\#define SYS\_\-getjiffies~337}}
+\label{time_8c_545150dbe7d8129a2da31c6e9be383d6}
+
+
+syscall getjiffies number 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{time_8c_85184b34267ebcaae7e360b4802f8fc2}{
+\index{time.c@{time.c}!meas\_\-start\_\-clock@{meas\_\-start\_\-clock}}
+\index{meas\_\-start\_\-clock@{meas\_\-start\_\-clock}!time.c@{time.c}}
+\subsubsection[{meas\_\-start\_\-clock}]{\setlength{\rightskip}{0pt plus 5cm}meas\_\-clock$\ast$ meas\_\-start\_\-clock (meas\_\-t $\ast$$\ast$ {\em mst}, \/  meas\_\-clock $\ast$ {\em clock}, \/  char $\ast$ {\em name})}}
+\label{time_8c_85184b34267ebcaae7e360b4802f8fc2}
+
+
+Start or/and create a timer. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. This argument is necessary only in the first call to create the clock (second argument will be NULL). After that, you can just pass NULL to mst and pass the clock in second argument. \item[{\em clock}]The clock created with this function. Use NULL in the first call. \item[{\em name}]A name to the clock (useful for report visualization). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]NULL if both mst and clock are different of NULL or the created clock. \end{Desc}
+\hypertarget{time_8c_ebf4b237ce0defb3c6b0e4ed1cacf2ca}{
+\index{time.c@{time.c}!meas\_\-stop\_\-clock@{meas\_\-stop\_\-clock}}
+\index{meas\_\-stop\_\-clock@{meas\_\-stop\_\-clock}!time.c@{time.c}}
+\subsubsection[{meas\_\-stop\_\-clock}]{\setlength{\rightskip}{0pt plus 5cm}int meas\_\-stop\_\-clock (meas\_\-clock $\ast$ {\em clock})}}
+\label{time_8c_ebf4b237ce0defb3c6b0e4ed1cacf2ca}
+
+
+Stop a timer. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em clock}]The timer \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if the timer was stopped or FALSE if the timer was already stopped. \end{Desc}

@@ -1,0 +1,65 @@
+\hypertarget{report_8c}{
+\section{src/report.c File Reference}
+\label{report_8c}\index{src/report.c@{src/report.c}}
+}
+{\tt \#include $<$meas.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$time.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{report_8c_da697425bb6c7faabe679cbb55158645}{TEXTBUFFER\_\-SIZE}~1024
+\begin{CompactList}\small\item\em Size of text buffer. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \hyperlink{report_8c_a2cc0e63094754b648404ee55f915f06}{meas\_\-generate\_\-report} (meas\_\-t $\ast$$\ast$mst, int parameters)
+\begin{CompactList}\small\item\em Generate report information. \item\end{CompactList}\item 
+void \hyperlink{report_8c_7a6c2dc30c0b2aea1874a62a65c287b3}{meas\_\-write\_\-report} (meas\_\-t $\ast$mst, FILE $\ast$fp)
+\begin{CompactList}\small\item\em Write report to file descriptor. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{report_8c_da697425bb6c7faabe679cbb55158645}{
+\index{report.c@{report.c}!TEXTBUFFER\_\-SIZE@{TEXTBUFFER\_\-SIZE}}
+\index{TEXTBUFFER\_\-SIZE@{TEXTBUFFER\_\-SIZE}!report.c@{report.c}}
+\subsubsection[{TEXTBUFFER\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TEXTBUFFER\_\-SIZE~1024}}
+\label{report_8c_da697425bb6c7faabe679cbb55158645}
+
+
+Size of text buffer. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{report_8c_a2cc0e63094754b648404ee55f915f06}{
+\index{report.c@{report.c}!meas\_\-generate\_\-report@{meas\_\-generate\_\-report}}
+\index{meas\_\-generate\_\-report@{meas\_\-generate\_\-report}!report.c@{report.c}}
+\subsubsection[{meas\_\-generate\_\-report}]{\setlength{\rightskip}{0pt plus 5cm}int meas\_\-generate\_\-report (meas\_\-t $\ast$$\ast$ {\em mst}, \/  int {\em parameters})}}
+\label{report_8c_a2cc0e63094754b648404ee55f915f06}
+
+
+Generate report information. 
+
+NOTE1: The new report will replace any previous report generated. NOTE2: This function will just generate the report, use meas\_\-show\_\-report to print it. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em parameters}]Parameters of report (REPORT\_\-TIMERS, REPORT\_\-COUNTERS or REPORT\_\-SHOW\_\-ALL). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE on error, TRUE otherwise. \end{Desc}
+\hypertarget{report_8c_7a6c2dc30c0b2aea1874a62a65c287b3}{
+\index{report.c@{report.c}!meas\_\-write\_\-report@{meas\_\-write\_\-report}}
+\index{meas\_\-write\_\-report@{meas\_\-write\_\-report}!report.c@{report.c}}
+\subsubsection[{meas\_\-write\_\-report}]{\setlength{\rightskip}{0pt plus 5cm}void meas\_\-write\_\-report (meas\_\-t $\ast$ {\em mst}, \/  FILE $\ast$ {\em fp})}}
+\label{report_8c_7a6c2dc30c0b2aea1874a62a65c287b3}
+
+
+Write report to file descriptor. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mst}]The meas user structure. \item[{\em fp}]File descriptor pointer. \end{description}
+\end{Desc}

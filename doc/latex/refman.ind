@@ -1,0 +1,159 @@
+\begin{theindex}
+
+  \item {\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {init.c}, \hyperpage{10}
+
+  \indexspace
+
+  \item {counter.c}
+    \subitem {meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter}, 
+		\hyperpage{7}
+    \subitem {meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter}, 
+		\hyperpage{8}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter}, 
+		\hyperpage{8}
+    \subitem {meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter}, 
+		\hyperpage{8}
+    \subitem {meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {init.c}
+    \subitem {\_\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\_\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{10}
+    \subitem {meas\_\discretionary {-}{}{}close}, \hyperpage{10}
+    \subitem {meas\_\discretionary {-}{}{}init}, \hyperpage{10}
+
+  \indexspace
+
+  \item {linkedl.c}
+    \subitem {llist\_\discretionary {-}{}{}add}, \hyperpage{12}
+    \subitem {llist\_\discretionary {-}{}{}create}, \hyperpage{12}
+    \subitem {llist\_\discretionary {-}{}{}destroy}, \hyperpage{13}
+    \subitem {llist\_\discretionary {-}{}{}index}, \hyperpage{13}
+    \subitem {llist\_\discretionary {-}{}{}length}, \hyperpage{13}
+    \subitem {llist\_\discretionary {-}{}{}nth}, \hyperpage{13}
+    \subitem {llist\_\discretionary {-}{}{}remove}, \hyperpage{14}
+    \subitem {llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth}, 
+		\hyperpage{14}
+  \item {llist\_\discretionary {-}{}{}add}
+    \subitem {linkedl.c}, \hyperpage{12}
+  \item {llist\_\discretionary {-}{}{}create}
+    \subitem {linkedl.c}, \hyperpage{12}
+  \item {llist\_\discretionary {-}{}{}destroy}
+    \subitem {linkedl.c}, \hyperpage{13}
+  \item {llist\_\discretionary {-}{}{}index}
+    \subitem {linkedl.c}, \hyperpage{13}
+  \item {llist\_\discretionary {-}{}{}length}
+    \subitem {linkedl.c}, \hyperpage{13}
+  \item {llist\_\discretionary {-}{}{}nth}
+    \subitem {linkedl.c}, \hyperpage{13}
+  \item {llist\_\discretionary {-}{}{}remove}
+    \subitem {linkedl.c}, \hyperpage{14}
+  \item {llist\_\discretionary {-}{}{}remove\_\discretionary {-}{}{}nth}
+    \subitem {linkedl.c}, \hyperpage{14}
+
+  \indexspace
+
+  \item {meas\_\discretionary {-}{}{}close}
+    \subitem {init.c}, \hyperpage{10}
+  \item {meas\_\discretionary {-}{}{}create\_\discretionary {-}{}{}counter}
+    \subitem {counter.c}, \hyperpage{7}
+  \item {meas\_\discretionary {-}{}{}dec\_\discretionary {-}{}{}counter}
+    \subitem {counter.c}, \hyperpage{8}
+  \item {meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report}
+    \subitem {report.c}, \hyperpage{15}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput}
+    \subitem {resources.c}, \hyperpage{17}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput}
+    \subitem {resources.c}, \hyperpage{18}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}counter}
+    \subitem {counter.c}, \hyperpage{8}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches}
+    \subitem {resources.c}, \hyperpage{18}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec}
+    \subitem {resources.c}, \hyperpage{18}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals}
+    \subitem {resources.c}, \hyperpage{18}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap}
+    \subitem {resources.c}, \hyperpage{19}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault}
+    \subitem {resources.c}, \hyperpage{19}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem}
+    \subitem {resources.c}, \hyperpage{19}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack}
+    \subitem {resources.c}, \hyperpage{19}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime}
+    \subitem {resources.c}, \hyperpage{20}
+  \item {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime}
+    \subitem {resources.c}, \hyperpage{20}
+  \item {meas\_\discretionary {-}{}{}inc\_\discretionary {-}{}{}counter}
+    \subitem {counter.c}, \hyperpage{8}
+  \item {meas\_\discretionary {-}{}{}init}
+    \subitem {init.c}, \hyperpage{10}
+  \item {meas\_\discretionary {-}{}{}set\_\discretionary {-}{}{}counter}
+    \subitem {counter.c}, \hyperpage{8}
+  \item {meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock}
+    \subitem {time.c}, \hyperpage{21}
+  \item {meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock}
+    \subitem {time.c}, \hyperpage{21}
+  \item {meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report}
+    \subitem {report.c}, \hyperpage{15}
+
+  \indexspace
+
+  \item {report.c}
+    \subitem {meas\_\discretionary {-}{}{}generate\_\discretionary {-}{}{}report}, 
+		\hyperpage{15}
+    \subitem {meas\_\discretionary {-}{}{}write\_\discretionary {-}{}{}report}, 
+		\hyperpage{15}
+    \subitem {TEXTBUFFER\_\discretionary {-}{}{}SIZE}, \hyperpage{15}
+  \item {resources.c}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkinput}, 
+		\hyperpage{17}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}blkoutput}, 
+		\hyperpage{18}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}cswitches}, 
+		\hyperpage{18}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}datasec}, 
+		\hyperpage{18}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nsignals}, 
+		\hyperpage{18}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}nswap}, 
+		\hyperpage{19}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}pagefault}, 
+		\hyperpage{19}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}shared\_\discretionary {-}{}{}mem}, 
+		\hyperpage{19}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stack}, 
+		\hyperpage{19}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}stime}, 
+		\hyperpage{20}
+    \subitem {meas\_\discretionary {-}{}{}get\_\discretionary {-}{}{}utime}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {src/ Directory Reference}, \hyperpage{5}
+  \item {src/counter.c}, \hyperpage{7}
+  \item {src/init.c}, \hyperpage{10}
+  \item {src/linkedl.c}, \hyperpage{12}
+  \item {src/report.c}, \hyperpage{15}
+  \item {src/resources.c}, \hyperpage{17}
+  \item {src/time.c}, \hyperpage{21}
+  \item {SYS\_\discretionary {-}{}{}getjiffies}
+    \subitem {time.c}, \hyperpage{21}
+
+  \indexspace
+
+  \item {TEXTBUFFER\_\discretionary {-}{}{}SIZE}
+    \subitem {report.c}, \hyperpage{15}
+  \item {time.c}
+    \subitem {meas\_\discretionary {-}{}{}start\_\discretionary {-}{}{}clock}, 
+		\hyperpage{21}
+    \subitem {meas\_\discretionary {-}{}{}stop\_\discretionary {-}{}{}clock}, 
+		\hyperpage{21}
+    \subitem {SYS\_\discretionary {-}{}{}getjiffies}, \hyperpage{21}
+
+\end{theindex}

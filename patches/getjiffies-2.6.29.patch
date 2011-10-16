@@ -1,0 +1,54 @@
+diff -Naur linux-2.6.29.6/arch/x86/include/asm/unistd_32.h linux-2.6.29.6-test/arch/x86/include/asm/unistd_32.h
+--- linux-2.6.29.6/arch/x86/include/asm/unistd_32.h	2009-09-23 18:20:39.000000000 -0300
++++ linux-2.6.29.6-test/arch/x86/include/asm/unistd_32.h	2009-10-19 16:40:17.000000000 -0200
+@@ -342,6 +342,7 @@
+ #define __NR_pwritev		334
+ #define __NR_rt_tgsigqueueinfo	335
+ #define __NR_perf_counter_open	336
++#define __NR_getjiffies			337
+ 
+ #ifdef __KERNEL__
+ 
+diff -Naur linux-2.6.29.6/arch/x86/kernel/syscall_table_32.S linux-2.6.29.6-test/arch/x86/kernel/syscall_table_32.S
+--- linux-2.6.29.6/arch/x86/kernel/syscall_table_32.S	2009-09-23 18:20:39.000000000 -0300
++++ linux-2.6.29.6-test/arch/x86/kernel/syscall_table_32.S	2009-10-19 16:39:16.000000000 -0200
+@@ -336,4 +336,5 @@ ENTRY(sys_call_table)
+ 	.long sys_ni_syscall		/* pwritev */
+ 	.long sys_rt_tgsigqueueinfo	/* 335 */
+ 	.long sys_perf_counter_open
++	.long sys_getjiffies		/* 337 - for libmeas */
+ 
+diff -Naur linux-2.6.29.6/kernel/Makefile linux-2.6.29.6-test/kernel/Makefile
+--- linux-2.6.29.6/kernel/Makefile	2009-09-23 18:20:43.000000000 -0300
++++ linux-2.6.29.6-test/kernel/Makefile	2009-10-19 17:15:47.000000000 -0200
+@@ -10,7 +10,7 @@ obj-y     = sched.o fork.o exec_domain.o
+ 	    kthread.o wait.o kfifo.o sys_ni.o posix-cpu-timers.o \
+ 	    hrtimer.o rwsem.o nsproxy.o srcu.o semaphore.o \
+ 	    notifier.o ksysfs.o pm_qos_params.o sched_clock.o cred.o \
+-	    async.o
++	    async.o getjiffies.o
+ 
+ ifdef CONFIG_FUNCTION_TRACER
+ # Do not trace debug files and internal ftrace files
+
+diff -Naur linux-2.6.29.6/kernel/getjiffies.c linux-2.6.29.6-test/kernel/getjiffies.c
+--- linux-2.6.29.6/kernel/getjiffies.c	1969-12-31 21:00:00.000000000 -0300
++++ linux-2.6.29.6-test/kernel/getjiffies.c	2009-10-19 17:16:14.000000000 -0200
+@@ -0,0 +1,16 @@
++/**
++ * Copyright (C) Renê de Souza Pinto
++ *
++ * sys_getjiffies
++ * This system call it's used by libmeas, a measurement 
++ * system for critical embedded systems.
++ *
++ */
++
++#include <linux/getjiffies.h>
++
++asmlinkage unsigned long sys_getjiffies(void)
++{
++	return(jiffies);
++}
++
+
