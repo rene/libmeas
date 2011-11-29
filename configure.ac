@@ -58,6 +58,7 @@ AC_DEFINE([TRUE],  [1], [Boolean value for C functions])
 AC_DEFINE([FALSE], [0], [Boolean value for C functions])
 
 # Check for library functions
+AC_CHECK_LIB(rt, clock_getcpuclockid,,AC_MSG_ERROR([ERROR! clock_getcpuclockid() not found. Are running a POSIX system?]))
 AC_FUNC_MALLOC
 
 # Output

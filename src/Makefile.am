@@ -19,12 +19,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-AM_CFLAGS = -Wall
+AM_CFLAGS=-Wall
 
 INCLUDES = -I$(srcdir)/include
 
 lib_LTLIBRARIES    = libmeas.la
 libmeas_la_SOURCES = init.c linkedl.c time.c counter.c report.c \
 					 resources.c include/*
-
 
