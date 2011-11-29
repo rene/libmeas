@@ -36,21 +36,7 @@ extern char _libmeas_use_syscall;
 /**
  * static functions
  */
-static pid_t meas_getpid(void);
 static unsigned long getjiffies(void);
-
-
-/**
- * This function is used to return the PID of the proccess
- * without use getpid() from libc, that make cache of PIDs, and
- * hence, in some circumstances can return fathers PID instead
- * the child PID.
- */
-static pid_t meas_getpid(void)
-{
-	pid_t mypid = syscall(SYS_getpid);
-	return mypid;
-}
 
 
 /**
@@ -111,7 +97,6 @@ int meas_stop_clock(meas_clock *clock)
 static unsigned long getjiffies(void)
 {
 	unsigned long jiffies = 0;
-	clockid_t clockid;
 	struct timespec ts;
 
 	if (_libmeas_use_syscall == 1) {
@@ -121,12 +106,7 @@ static unsigned long getjiffies(void)
 			return(0);
 		}
 	} else {
-		if (clock_getcpuclockid(meas_getpid(), &clockid) != 0) {
-			fprintf(stderr, "libmeas CRITICAL ERROR: clock_getcpuclockid(): %s\n", strerror(errno));
-			return(0);
-		}
-
-		if (clock_gettime(clockid, &ts) == -1) {
+		if (clock_gettime(CLOCK_REALTIME, &ts) == -1) {
 			fprintf(stderr, "libmeas CRITICAL ERROR: clock_gettime(): %s\n", strerror(errno));
 			return(0);
 		}
